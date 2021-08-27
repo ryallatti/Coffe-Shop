@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Coffe_Shop.Models.ShopModel>
+
+
+<div class="container">
+    <h4 class="display-6 text-dark text-sm-center">Items</h4>
+    <div class="row">
+        @foreach (var Item in Model)
+        {
+            <div class="card w-25">
+                <img src="~/images/image1.png" />
+
+                <div class="card-body">
+                    <h6 class="card-title text-uppercase text-center">@Item.ItemName</h6>
+                    <p class="card-text text-sm-center">Size : @Item.Size</p>
+                    <p class="card-text text-sm-center">Price : @Item.Price</p>
+
+                </div>
+                <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+            </div>
+
+        }
+        <hr />
+    </div>
+    </div>
+
+
